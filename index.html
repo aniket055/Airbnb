@@ -1,197 +1,359 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staybnb</title>
-    <link rel="stylesheet" href='style.css'>
-    <script src="https://kit.fontawesome.com/81023977bd.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Redstore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
-    <nav id="navBar">
-        <img src="images/logo.png" class="logo">
-        <ul class="nav-links">
-            <li><a href="#" class="active">Popular Places</a></li>
-            <li><a href="#">Travel Outside</a></li>
-            <li><a href="#">Online Packages</a></li>
-        </ul>
-        <a href="#" class="register-btn">Register Now</a>
-        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
-    </nav>
+
+<div class="header"> 
     <div class="container">
-        <h1>Find Your Next Stay</h1>
-        <div class="search-bar">
-            <form>
-                <div class="location-input">
-                    <label>Location</label>
-                    <input type="text" placeholder="Where are you going?">
+        <div class="navbar">
+            <div class="logo">
+                <img src="ecommerce image/logo.png" width="125px">
+        </div>
+    <nav>
+       <ul id="MenuItems"> 
+        <li><a href="#">Home</a></li>
+            <li><a href="products.html">Products</a></li> <!-- Link to the second page -->
+            <li><a href="about.html">About</a></li> <!-- Link to the about page -->
+            <li><a href="contact.html">Contact</a></li> <!-- Link to the contact page -->
+        <li><a href="account.html">Account</a></li> <!-- Link to the account page -->
+        </ul>
+    </nav>
+         <img src="ecommerce image/cart.png" width="30px" height="30px">
+          <img src="ecommerce image/menu.png" class="menu-icon" onclick="menutoggle()"width="40px" height="40px">   
+    </div>
+    <div class="row">
+        <div class="col-2">
+        <h1>Give Your Workout<br>A New Style!</h1>
+         <p>Success isn't always about greatness. It's about consistency. Consistent<br>hard work gains success. Greatness will come.</p>
+        <a href=" "class="btn">Explore Now &#8594;</a>
+</div>
+        <div class="col-2">
+        <img src="ecommerce image/image1.png">
+      </div>
+    </div>
+ </div> 
+</div>
+   
+    
+    <!--------featured categories-------->
+       <div class="categories">
+         <div class="small-container">
+             <div class="row">
+                <div class="col-3">
+                   <img src="ecommerce image/category-1.jpg">
+                   </div>
+             <div class="col-3">
+                   <img src="ecommerce image/category-2.jpg">
+                   </div>
+             <div class="col-3">
+                   <img src="ecommerce image/category-3.jpg">
+                   </div>
+        </div>
+           </div>
+        </div>
+ <!--------featured products--------> 
+        <div class="small-container">
+         <h2 class="title">Featured Products</h2>
+            <div class="row">
+              <div class="col-4">
+                 <img src="ecommerce image/product-1.jpg">
+                   <h4>Red Printed T-shirt</h4>
+                    <div class="rating">
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                      <p>$70.00</p>
+                  </div>
+             </div>
+              <div class="col-4">
+                  <img src="ecommerce image/product-2.jpg">
+                   <h4>Red Printed T-shirt</h4>
+                    <div class="rating">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star-half-o"></i>
+                      <i class="fa fa-star-o"></i>
+                      <p>$70.00</p>
                 </div>
-                <div>
-                    <label>Check in</label>
-                    <input type="text" placeholder="Add Date">
+            </div>
+            <div class="col-4">
+            <img src="ecommerce image/product-3.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-half-o"></i>
+            <p>$70.00</p>
                 </div>
-                <div>
-                    <label>Check out</label>
-                    <input type="text" placeholder="Add Date">
+      </div>
+            <div class="col-4">
+            <img src="ecommerce image/product-4.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+            <p>$70.00</p>
+        </div>
+     </div>
+  <h2 class="title">Latest Products</h2>
+         <div class="row">
+         <div class="col-4">
+            <img src="ecommerce image/product-5.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+             <i class="fa fa-star-o"></i>
+            <p>$70.00</p>
+         </div>
+     </div>
+         <div class="col-4">
+            <img src="ecommerce image/product-6.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+            </div>
+            <p>$70.00</p>
                 </div>
-                <div>
-                    <label>Guest</label>
-                    <input type="text" placeholder="Add Guest">
+         <div class="col-4">
+            <img src="ecommerce image/product-7.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+            <p>$70.00</p>
                 </div>
-                <button type="submit"><img src="images/search.png"></button>
-            </form>
+                </div>
+         <div class="col-4">
+            <img src="ecommerce image/product-8.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+            <p>$70.00</p>
+                </div>
+            </div>
+        <div class="row">
+         <div class="col-4">
+            <img src="ecommerce image/product-9.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+            <p>$70.00</p>
+                </div>
+            </div>
+         <div class="col-4">
+            <img src="ecommerce image/product-10.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+            <p>$70.00</p>
+                </div>
+            </div>
+         <div class="col-4">
+            <img src="ecommerce image/product-11.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+            <p>$70.00</p>
+                </div>
+            </div>
+         <div class="col-4">
+            <img src="ecommerce image/product-12.jpg">
+            <h4>Red Printed T-shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+            <p>$70.00</p>
+                </div>
+         </div>
+   </div>
+        </div>
+<!------- offer ------->
+         <div class="offer">
+        <div class="small-container">
+         <div class="row">
+             <div class="col-2">
+            <img src="ecommerce image/exclusive.png" class="offer">
+             </div>
+             <div class="col-2">
+             <p>Exclusively Available on OrDinary Store</p>
+            <h1>Smart Band 4</h1>
+            <small>The Mi Smart Band 4 features a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</small>
+            <a href=""class="btn">Buy Now &#8594;</a>
+             </div>
         </div>
     </div>
-    </div>
-    <div class="container">
-      <h2 class="sub-title">Exclusives</h2>
-      <div class="exclusives">
-          <div>
-              <img src="images/image-1.png">
-              <span>
-                  <h3>London</h3>
-                  <p>Starts @ $250</p>
-              </span>
+</div>
+<!--------- testimonial --------->
+        <div class="testimonial">
+        <div class="small-container">
+         <div class="row">
+            <div class="col-3">
+             <i class="fa fa-quote-left"></i>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+             <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+             <img src="ecommerce image/user-1.png">
+             <h3>Luna Watkins</h3>
+            </div>
+        </div>
+            <div class="col-3">
+             <i class="fa fa-quote-left"></i>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                  <img src="ecommerce image/user-2.png">
+             <h3>Alexis Bell</h3>
+            </div>
+        </div>
+        
+           <div class="col-3">
+              <i class="fa fa-quote-left"></i>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                 <div class="rating">     
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+             <img src="ecommerce image/user-3.png">
+             <h3>Luisa Evans</h3>
            </div>
-  <div>
-  <img src="images/image-2.png">
-  <span>
-      <h3>Switzerland</h3>
-      <p>Starts @ $250</p>
-  </span>
-</div>
-<div>
-<img src="images/image-3.png">
-<span>
-  <h3>Australia</h3>
-  <p>Starts @ $250</p>
-</span>
-</div>
-<div>
-<img src="images/image-4.png">
-<span>
-  <h3>France</h3>
-  <p>Starts @ $250</p>
-</span>
-</div>
-<div>
-<img src="images/image-5.png">
-<span>
-  <h3>Amsterdam</h3>
-  <p>Starts @ $250</p>
-</span>
-</div>
-<div>
-  <img src="images/image-6.png">
-  <span>
-      <h3>Netherlands</h3>
-      <p>Starts @ $250</p>
-  </span>
-  </div>
-  <div>
-      <img src="images/image-7.png">
-      <span>
-          <h3>New York</h3>
-          <p>Starts @ $250</p>
-      </span>
-      </div>
-      <div>
-          <img src="images/image-8.png">
-          <span>
-              <h3>Chicago</h3>
-              <p>Starts @ $250</p>
-          </span>
+        </div>
+    </div>    
+</div>   
+<!---------brands---------->
+    <div class="brands">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-5">
+          <img src="ecommerce image/logo-oppo.png">
           </div>
-          <div>
-              <img src="images/image-9.png">
-              <span>
-                  <h3>San Francisco</h3>
-                  <p>Starts @ $250</p>
-              </span>
-              </div>
-              <div>
-                  <img src="images/image-10.png">
-                  <span>
-                      <h3>Shanghai</h3>
-                      <p>Starts @ $250</p>
-                  </span>
-                  </div>
-</div>
-
-<h2 class="sub-title">Trending Places</h2>
-<div class="trending">
-  <div>
-      <img src="images/dubai.png">
-      <h3>Dubai</h3>
-  </div>
-  <div>
-      <img src="images/new-york.png">
-      <h3>New York</h3>
-  </div>
-  <div>
-      <img src="images/paris.png">
-      <h3>Paris</h3>
-  </div>
-  <div>
-      <img src="images/new-delhi.png">
-      <h3>New Delhi</h3>
-  </div>
-</div>  
-
-<div class="cta">
-   <h3>Sharing <br>Is Earning Now</h3>
-   <p>Great opportunity to make money by <br>sharing your extra space.</p>
-   <a href="#" class="cta-btn">Know More</a>
-  </div>
-  
-  <h2 class="sub-title">Travellers Stories</h2>
-  <div class="stories">
-    <div>
-       <img src="images/story-1.png">
-      <p>Popular European with a budget of just $10,000</p>
+          <div class="col-5">
+          <img src="ecommerce image/logo-paypal.png">
+          </div>
+          <div class="col-5">
+          <img src="ecommerce image/logo-godrej.png">
+          </div><div class="col-5">
+          <img src="ecommerce image/logo-philips.png">
+          </div>
+          <div class="col-5">
+          <img src="ecommerce image/logo-coca-cola.png">
+          </div>
+        </div>   
+        </div>
     </div>
-    <div>
-      <img src="images/story-2.png">
-      <p>Traveled more than 100 Countries in less than a year</p>
-   </div>
-   <div>
-    <img src="images/story-3.png">
-    <p>Best experience you get while traveling to Thailand</p>
+    <!--------footer-------->
+        
+<div class="footer">
+    <div class="container">
+       <div class="row">
+           <div class="footer-col-1">
+         <h3>Download Our App</h3>
+         <p>Download App for Android and ios mobile phone.</p>
+         <div class="app-logo"></div>
+                <img src="ecommerce image/play-store.png">
+                <img src="ecommerce image/app-store.png">
+        </div>
+           <div class="footer-col-2">
+         <img src="ecommerce image/logo.png">
+         <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many. </p>
+        </div>
+           <div class="footer-col-3">
+         <h3>Useful Links</h3>
+         <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+        </ul>      
+        </div>
+           <div class="footer-col-4">
+         <h3>Follow us on</h3>
+         <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+        </ul>      
+        </div>
  </div>
-  </div> 
-   <a href="#" class="start-btn">Start making money</a>
-   
-   <div class="about-msg">
-       <h2>About Staybnb</h2>
-       <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-   </div>
-
-    <div class="footer">
-      <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-      <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-      <hr>
-      <p>Copyright © 2023, Pushpanjali Rai.</p>
+<hr>
+ <p class="copyright">Copyright 2023 - Pushpanjali</p>        
+</div>
     </div>
-
-
-    </div>
-
+    
+<!---------js for toggle menu--------->
     <script>
-      var navBar = document.getElementById("navBar");
+     var MenuItems = documents.getElementById("MenuItems");
+        
+         MenuItems.style.maxHeight = "0px";
+         function menutoggle(){
+             if( MenuItems.style.maxHeight = "0px")
+                 
+        
+        MenuItems.style.maxHeight = "200px";
+       else 
+    
+        {
+                        
+         MenuItems.style.maxHeight = "0px";    
 
-      function togglebtn(){
-        navBar.ckasslist.toggle("hidemenu");
-      }
+        }
+    }  
     </script>
-   
-          
-                       
-            
-            
-          
     </div>
-  </body>
-</html>
+    
+   
